@@ -1,6 +1,6 @@
 ﻿namespace JOYSTONE
 {
-    partial class Inicio
+    partial class Prueba
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Prueba
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Inicio";
+            this.Name = "Prueba";
+            this.Text = "Prueba";
+            this.Load += new System.EventHandler(this.Prueba_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

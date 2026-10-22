@@ -1,4 +1,4 @@
-﻿namespace SistemaJoyeria
+﻿namespace JOYSTONE.Forms
 {
     partial class FrmLogin
     {
@@ -32,7 +32,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContrasena = new System.Windows.Forms.TextBox();
-            this.lblMensaje = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblContrasena = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnIngresar
@@ -43,6 +44,7 @@
             this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
             // btnSalir
             // 
@@ -52,6 +54,7 @@
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // txtUsuario
             // 
@@ -69,28 +72,42 @@
             this.txtContrasena.TabIndex = 5;
             this.txtContrasena.UseSystemPasswordChar = true;
             // 
-            // lblMensaje
+            // lblUsuario
             // 
-            this.lblMensaje.AutoSize = true;
-            this.lblMensaje.ForeColor = System.Drawing.Color.Red;
-            this.lblMensaje.Location = new System.Drawing.Point(195, 365);
-            this.lblMensaje.Name = "lblMensaje";
-            this.lblMensaje.Size = new System.Drawing.Size(44, 16);
-            this.lblMensaje.TabIndex = 6;
-            this.lblMensaje.Text = "label1";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.ForeColor = System.Drawing.Color.Black;
+            this.lblUsuario.Location = new System.Drawing.Point(212, 26);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(54, 16);
+            this.lblUsuario.TabIndex = 6;
+            this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.UseMnemonic = false;
+            // 
+            // lblContrasena
+            // 
+            this.lblContrasena.AutoSize = true;
+            this.lblContrasena.ForeColor = System.Drawing.Color.Black;
+            this.lblContrasena.Location = new System.Drawing.Point(212, 128);
+            this.lblContrasena.Name = "lblContrasena";
+            this.lblContrasena.Size = new System.Drawing.Size(42, 16);
+            this.lblContrasena.TabIndex = 7;
+            this.lblContrasena.Text = "Clave";
+            this.lblContrasena.UseMnemonic = false;
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 450);
-            this.Controls.Add(this.lblMensaje);
+            this.Controls.Add(this.lblContrasena);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIngresar);
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,6 +119,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContrasena;
-        private System.Windows.Forms.Label lblMensaje;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblContrasena;
     }
 }

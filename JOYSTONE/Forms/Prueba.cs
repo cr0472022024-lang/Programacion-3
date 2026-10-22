@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace JOYSTONE
 {
-    public partial class Inicio : Form
+    public partial class Prueba : Form
     {
-        public Inicio()
+        public Prueba()
         {
             InitializeComponent();
+        }
+
+        private void Prueba_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
